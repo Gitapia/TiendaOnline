@@ -501,3 +501,112 @@ footer .container {
         font-size: 2rem;
     }
 }
+
+/* Estilos específicos para la página de suplementos */
+.category-hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/suplementos/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.product-filters {
+    background: #f5f5f5;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-options select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.products-listing {
+    padding: 40px 0;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-card .brand {
+    color: #666;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.product-card .description {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.supplement-info {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.info-card i {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}

@@ -20,9 +20,9 @@
                     <li><a href="productos.html" class="active">Productos</a></li>
                     <li><a href="#">Categorías</a>
                         <ul class="submenu">
-                            <li><a href="#">Electrónica</a></li>
+                            <li><a href="#">Tennis</li>
                             <li><a href="#">Ropa</a></li>
-                            <li><a href="#">Hogar</a></li>
+                            <li><a href="#">Accesorios</a></li>
                             <li><a href="suplementos.html">Suplementos Deportivos</a></li>
                         </ul>
                     </li>
@@ -38,6 +38,52 @@
             </div>
         </div>
     </header>
+
+    <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+        <span class="close-cart">&times;</span>
+        <h2>Tu Carrito</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Los productos se añadirán aquí dinámicamente -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button class="btn checkout-btn">Proceder al Pago</button>
+        </div>
+        
+        <!-- Añade esta sección para los métodos de pago -->
+        <div class="payment-methods" id="payment-methods" style="display: none;">
+            <h3>Selecciona tu método de pago</h3>
+            <div class="payment-options">
+                <div class="payment-option" data-method="mercadopago">
+                    <img src="img/mercado.png" alt="Mercado Pago">
+                    <span>Mercado Pago</span>
+                </div>
+                <div class="payment-option" data-method="paypal">
+                    <img src="img/paypal.jpg" alt="PayPal">
+                    <span>PayPal</span>
+                </div>
+                <div class="payment-option" data-method="mastercard">
+                    <img src="img/logo_mastercard-despues.jpg" alt="MasterCard">
+                    <span>MasterCard</span>
+                </div>
+                <div class="payment-option" data-method="amex">
+                    <img src="img/logo_amex_portada.jpg" alt="American Express">
+                    <span>American Express</span>
+                </div>
+                <div class="payment-option" data-method="credit">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Tarjeta de Crédito</span>
+                </div>
+                <div class="payment-option" data-method="debit">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Tarjeta de Débito</span>
+                </div>
+            </div>
+            <button class="btn back-to-cart">Volver al Carrito</button>
+        </div>
+    </div>
+</div>
 
     <!-- Banner de suplementos -->
     <section class="category-hero">

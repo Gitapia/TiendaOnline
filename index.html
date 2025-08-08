@@ -20,9 +20,9 @@
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="#">Categorías</a>
                         <ul class="submenu">
-                            <li><a href="#">Electrónica</a></li>
+                            <li><a href="#">Tennis</a></li>
                             <li><a href="#">Ropa</a></li>
-                            <li><a href="#">Hogar</a></li>
+                            <li><a href="#">Accesorios</a></li>
                         </ul>
                     </li>
                     <li><a href="contacto.html">Contacto</a></li>
@@ -102,8 +102,110 @@
             <p>Total: <span id="cart-total">$0.00</span></p>
             <button class="btn checkout-btn">Proceder al Pago</button>
         </div>
+        
+        <!-- Añade esta sección para los métodos de pago -->
+        <div class="payment-methods" id="payment-methods" style="display: none;">
+            <h3>Selecciona tu método de pago</h3>
+            <div class="payment-options">
+                <div class="payment-option" data-method="mercadopago">
+                    <img src="img/mercado.png" alt="Mercado Pago">
+                    <span>Mercado Pago</span>
+                </div>
+                <div class="payment-option" data-method="paypal">
+                    <img src="img/paypal.jpg" alt="PayPal">
+                    <span>PayPal</span>
+                </div>
+                <div class="payment-option" data-method="mastercard">
+                    <img src="img/logo_mastercard-despues.jpg" alt="MasterCard">
+                    <span>MasterCard</span>
+                </div>
+                <div class="payment-option" data-method="amex">
+                    <img src="img/logo_amex_portada.jpg" alt="American Express">
+                    <span>American Express</span>
+                </div>
+                <div class="payment-option" data-method="credit">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Tarjeta de Crédito</span>
+                </div>
+                <div class="payment-option" data-method="debit">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Tarjeta de Débito</span>
+                </div>
+            </div>
+            <button class="btn back-to-cart">Volver al Carrito</button>
+        </div>
+        
     </div>
 </div>
+
+<div class="card-payment-form" id="card-payment-form" style="display: none;">
+                <h3><i class="fas fa-credit-card"></i> Pago con tarjeta</h3>
+                
+                <form id="credit-card-form">
+                    <div class="form-group">
+                        <label for="cardholder-name">Nombre en la tarjeta</label>
+                        <input type="text" id="cardholder-name" placeholder="Como aparece en la tarjeta" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="card-number">Número de tarjeta</label>
+                        <div id="card-number-element" class="card-input-element"></div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="card-expiry">Expiración</label>
+                            <div id="card-expiry-element" class="card-input-element"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="card-cvc">CVC</label>
+                            <div id="card-cvc-element" class="card-input-element"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn submit-payment-btn">
+                            <i class="fas fa-lock"></i> Pagar $<span id="payment-amount">0.00</span>
+                        </button>
+                        <button type="button" class="btn back-to-methods-btn">
+                            <i class="fas fa-arrow-left"></i> Cambiar método
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="card-icons">
+                    <img src="img/payments/visa.png" alt="Visa">
+                    <img src="img/payments/mastercard.png" alt="Mastercard">
+                    <img src="img/payments/amex.png" alt="American Express">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Login -->
+    <div class="login-modal" id="login-modal">
+        <div class="login-content">
+            <span class="close-login">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn login-submit">Ingresar</button>
+                <div class="login-links">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <a href="#">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer>

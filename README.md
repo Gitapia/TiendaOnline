@@ -1,3 +1,7 @@
+Descripcion: Tienda Online de prouctos deportivos con diferentes tipos de pago.
+Tecnologias: HTML, CSS, JAVACRIPT, GRID.
+Uso: Seleccionar el producto para llevarlo al carrito de compras y seleccionar el tipo de pago.
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
